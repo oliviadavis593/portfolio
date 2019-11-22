@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="main.css" />
     <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
     <title>Wireframe HTML Portfolio</title>
   </head>
   <body>
@@ -32,6 +33,7 @@
       
       <!--about section-->
     <section class="section-about">
+        <div class="about-container">
             <h2>About Me</h2>
         <div class="about-content">
             <p>I'm a Full Stack Developer living in Chicago, Illinois. I have experience with modern    front-end Javascript frameworks along with HTML5 and CSS3.
@@ -43,21 +45,15 @@
             </p>
            <img class="profile-picture" src="img/profile-pic.png" alt="profile picture"> 
         </div>
+        </div>
     </section>
 
+    
       
       <div class="section-break">
-      <h4>Section Break</h4>
+      <h4>Projects</h4>
       </div>
-      
-    <!-- Skills Section -->
-    <section class="section-skills">
-        <div class="front-end">
-            <p>Front-end:</p>
-            <img src="" alt="">
-         </div>
-    </section>
-      
+    
       
       <!--Project section-->
     <section class="section-projects" data-scroll-id="projects" tabindex="-1" style="outline: none">
@@ -66,7 +62,7 @@
                     <img class="photo" src="img/space-quizpic_iphonexspacegrey_portrait.png" alt="space quiz picture">
                 </div>
 
-            <details>
+            <details open>
                 <summary>
                     <h3>Space Quiz</h3>
                 </summary>
@@ -93,6 +89,9 @@
                     
     </section>
       
+      <div class="section-break">
+      <h4>Contact</h4>
+      </div>
       
       <!--Contact Section-->
       <footer class="contact">
@@ -101,8 +100,8 @@
                     <p>For general inquiry  
                         <a class="email" href="mailto:olivia.davis593@gmail.com">email me</a>
                     !</p>
-                    <ion-icon name="logo-github"></ion-icon>
-                    <ion-icon name="logo-linkedin"></ion-icon>
+                    <a href="https://github.com/oliviadavis593"><ion-icon name="logo-github" class="icons"></ion-icon></a>
+                    <a href="https://www.linkedin.com/in/olivia-davis-ab1848105/"><ion-icon name="logo-linkedin" class="icons"></ion-icon></a>
                 </div>
         </footer>
      <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
