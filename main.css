@@ -266,6 +266,12 @@ a:hover {
 
 /*============================*/
 
+@media only screen and (min-width: 500px) {
+    .navigation ul {
+        width: 70%; 
+    }
+}
+
 @media only screen and (min-width: 720px) {
     
     /*Header Section*/
@@ -281,7 +287,11 @@ a:hover {
     
     /*Navigation Section*/
     .navigation a {
-        font-size: 30px;    
+        font-size: 25px;    
+    }
+
+    .navigation ul {
+        width: 70%;
     }
     
    /*About Section---*/
@@ -357,11 +367,11 @@ a:hover {
     .about-content {
         display: flex;
         flex-direction: row;
+        text-align: center;
     }
 
-    .about-content p {
-        display: flex;
-        flex-direction: column;
+    .profile-picture {
+        margin-left: 20px;
     }
     
     /*Section Break*/
