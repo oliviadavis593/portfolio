@@ -6,31 +6,43 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="main.css" />
     <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Merriweather:300,400,700,900&display=swap"
-      rel="stylesheet"
-    />
     <title>Wireframe HTML Portfolio</title>
   </head>
   <body>
       
       <!-- header -->
-    <header class="header">
-      <h1>Hero</h1>
-    </header>
+    <header role="banner" class="header">
+            <div class="logo-container">
+                <h1 class="logo">
+                    <span>Olivia Davis</span>
+                </h1>
+            </div>
+     </header>
     
          <!-- nav -->
-    <nav class="navigation">
-      <h2>Nav</h2>
+    <nav class="navigation" role="navigation">
+        <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Skills</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Resume</a></li>
+            <li><a href="#">Contact</a></li>
+      </ul>
     </nav>
       
       <!--about section-->
     <section class="section-about">
-      <div class="about-content">
-        <h3>Section 1</h3>
-      </div>
-        
-      <img src="./assets/images/olivia-davis.png" alt="Olivia Davis" />
+            <h2>About Me</h2>
+        <div class="about-content">
+            <p>I'm a Full Stack Developer living in Chicago, Illinois. I have experience with modern    front-end Javascript frameworks along with HTML5 and CSS3.
+                I'm passionate about building reusable and maintable code, with focus on user experience.
+                My goal is to keep learning new technologies, build fresh and new projects, and be able to support and be supported by a team.  
+            </p>
+            <p>
+                When i'm not coding, i'm most likely learning web-hacking (finding vuerabilities inside companies), growing my amazon business, playing video games, or making music.
+            </p>
+           <img class="profile-picture" src="img/profile-pic.png" alt="profile picture"> 
+        </div>
     </section>
 
       
@@ -40,26 +52,59 @@
       
     <!-- Skills Section -->
     <section class="section-skills">
-        <h3>Section 2</h3>
-      </section>
+        <div class="front-end">
+            <p>Front-end:</p>
+            <img src="" alt="">
+         </div>
+    </section>
       
-      <div class="section-break">
-      <h4>Section Break</h4>
-      </div>
       
       <!--Project section-->
-      <section class="section-projects">
-        <h3>Project 1</h3>
-      </section>
+    <section class="section-projects" data-scroll-id="projects" tabindex="-1" style="outline: none">
+        <section id="space-quiz" class="project-container">
+                <div class="img-container">
+                    <img class="photo" src="img/space-quizpic_iphonexspacegrey_portrait.png" alt="space quiz picture">
+                </div>
+
+            <details>
+                <summary>
+                    <h3>Space Quiz</h3>
+                </summary>
+                    <p>
+                            A responsive web application, that focuses on user experience. The application is 
+                            based on space, and the users knowledge of space itself. The purpose of the overall application 
+                            is to make a fun and exciting way to take a test, that all users will love.  
+                    </p>
+                <div class="code-info">
+                    <a  href="https://oliviadavis593.github.io/space-quiz/index.html" target="_blank">
+                                Live App
+                    </a>
+                    <a  href="https://github.com/oliviadavis593/space-quiz" target="_blank">
+                                Code Details
+                    </a>
+                </div>
+                    <ul>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>jQuery</li>
+                    </ul>
+            </details>
+        </section>
+                    
+    </section>
       
-       <div class="section-break">
-      <h4>Section Break</h4>
-      </div>
       
       <!--Contact Section-->
       <footer class="contact">
-        <h3>Footer</h3>
-      </footer>
-     
+                <div class="contact-info">
+                    <h3>I'd love to hear from you!</h3>
+                    <p>For general inquiry  
+                        <a class="email" href="mailto:olivia.davis593@gmail.com">email me</a>
+                    !</p>
+                    <ion-icon name="logo-github"></ion-icon>
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                </div>
+        </footer>
+     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
   </body>
 </html>

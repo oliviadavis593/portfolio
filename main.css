@@ -3,69 +3,186 @@
 }
 
 body {
-    margin: 0; 
+    font-family: 'Bebas Neue', serif;
+    line-height: 1.735;
 }
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; 
+}
+
+/*===========================*/
+  /* Reusable Content--------- */
+/*===========================*/
+
+.section-break {
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.30),rgba(0, 0, 0, 0.30)),url(img/break-image.jpg);
+    display: flex;
+    justify-content: center;
+    background-color: #CAC9C9;
+}
+
+.section-break h4 {
+    font-size: 20px;
+}
+/*===========================*/
+  /* Header Section--------- */
+/*===========================*/
+
 
 .header {
     border: 1px solid #000; 
     width: 100%; 
-    height: 20vh;
-    background-color: grey;
+    height: 40vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.30)),url(img/abstract2.jpg);
+    background-size: cover;
+    background-color: #cf6d17;
 }
 
 .header h1 {
+   border: 7px solid #fff;
+    background-color: #000;
+    width: 220px;
     color: white;
-    display: flex; 
-    justify-content: center;
-    align-items: center;
+    display: flex;                 /*==============================*/
+    justify-content: center;            /*Fix the response issue*/
+    align-items: center;            /*==============================*/
     margin-top: 60px;
+    margin-left: 50px;
 }
+
+/*===========================*/
+  /* Nav Section--------- */
+/*===========================*/
 
 .navigation {
-    border: 1px solid #000;
-    display: flex; 
-    justify-content: center;
-    background-color: #000;
+    background-color: #222;
     color: #fff;
-    
 }
 
-.section-about {
-    border: 1px solid #000; 
+.navigation ul {
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  margin: auto;
+}
+
+.navigation a {
+    font-size: 17px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: color 0.5s;
+    color: #fff;
+    text-align: center
+}
+
+/*Psuedo Navigation------*/
+
+.navigation a:visited,
+a:link {
+    color: #fff;
+}
+
+.navigation a:hover,
+a:active {
+    color: #cf6d17;
+    transition: color 0.5s;
+}
+
+/*===========================*/
+  /* About Section--------- */
+/*===========================*/
+
+.section-about { 
     width: 100%;
-    height: 30vh;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #EAE6E5;
-    
+    background-color: #cf6d17;
 }
+
+.about-content {
+   
+}
+
+.profile-picture {
+    border: 5px solid #000;
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    display: block; 
+    margin: auto;
+}
+
+/*===========================*/
+  /* Skills Section--------- */
+/*===========================*/
 
 .section-skills {
-    border: 1px solid #000; 
     width: 100%;
-    height: 20vh;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #EAE6E5;
+    background-color:#cf6d17;
 }
 
-.section-projects {
-    border: 1px solid #000; 
+/*===========================*/
+  /* Project Section--------- */
+/*===========================*/
+
+.section-projects { 
     width: 100%;
-    height: 20vh;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #EAE6E5;
+    background-color:#648280;
 }
 
-.contact {
-    border: 1px solid #000; 
+.photo {
+    width: 100%;
+    height: auto;
+}
+
+.project-container {
+    text-align: center;
+}
+
+.code-info a {
+    text-decoration: none;
+    margin-right: 10px;
+    font-size: 20px;
+    color: #fff;
+}
+
+details ul {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 25px;
+}
+
+details ul li {
+    list-style: none;
+}
+
+/*===========================*/
+  /* Contact Section--------- */
+/*===========================*/
+
+.contact { 
     color: #fff;
     width: 100%;
     height: 20vh;
@@ -74,10 +191,4 @@ body {
     align-items: center;
     flex-direction: column;
     background-color: grey;
-}
-.section-break {
-    border: 1px solid black;
-    display: flex;
-    justify-content: center;
-    background-color: #CAC9C9;
 }
