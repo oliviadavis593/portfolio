@@ -28,7 +28,7 @@ body {
 }
 
 .section-break h4 {
-    font-size: 20px;
+    font-size: 23px;
 }
 /*===========================*/
   /* Header Section--------- */
@@ -83,7 +83,8 @@ body {
     text-decoration: none;
     transition: color 0.5s;
     color: #fff;
-    text-align: center
+    text-align: center;
+    
 }
 
 /*Psuedo Navigation------*/
@@ -123,6 +124,7 @@ a:active {
 }
 
 .about-content {
+   padding: 1em 2em 0; 
    text-align: center;
 }
 
@@ -167,6 +169,8 @@ a:active {
 .section-projects p {
     font-family: 'Lato', sans-serif;
     font-weight: bold;
+    padding: 1em 2em 0; 
+    font-size: 15px;
 }
 
 .photo {
@@ -201,7 +205,7 @@ details ul li {
 }
 
 summary h3 {
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .code-info a:visited,
@@ -267,8 +271,21 @@ a:hover {
 /*============================*/
 
 @media only screen and (min-width: 500px) {
+
+    /*Navigation Section*/
     .navigation ul {
         width: 70%; 
+    }
+
+    /*About Section*/
+    .about-content p {
+        padding: 1em 2em 0; 
+    }
+
+    /*Project Section*/
+    .photo {
+        width: 450px;
+        height: 450px;
     }
 }
 
@@ -297,20 +314,25 @@ a:hover {
    /*About Section---*/
     .section-about {
         padding: 1em 4em 3em; 
-        font-size: 25px;
+        font-size: 10px;
     }
 
     .section-about h2 {
         font-size: 40px;
     }
+
+    .about-content p {
+        font-size: 18px;
+        padding: 1em 3em 0; 
+    }
     /*Section Break*/
      .section-break h4 {
-        font-size: 35px;
+        font-size: 30px;
     }
     
     /*Project Section*/
     summary h3 {
-        font-size: 50px;
+        font-size: 30px;
     }
     
     .photo {
@@ -320,7 +342,8 @@ a:hover {
     
     details p {
         padding: 2em 3em 0;
-        font-size: 35px;
+        font-size: 18px;
+        padding: 1em 7em 0; 
     }
     
     details ul li {
@@ -329,13 +352,13 @@ a:hover {
     }
     
     .code-info a {
-        font-size: 30px;
+        font-size: 25px;
         padding-left: 20px;
     }
     
     /*Contact Section*/
     .contact h3, p {
-        font-size: 25px;
+        font-size: 20px;
     }
     
     .icons {
@@ -349,13 +372,18 @@ a:hover {
     
     /*Header Section*/
     .header {
-        height: 60vh;
+        height: 50vh;
     }
     
+    .header h1 {
+        width: 400px;
+        height: 105px;
+        font-size: 55px;
+    }
     
     /*Navigation Section*/
     .navigation a {
-        font-size: 30px;    
+        font-size: 25px;    
     }
     
    /*About Section---*/
@@ -370,37 +398,43 @@ a:hover {
         text-align: center;
     }
 
+    .about-content p {
+        font-size: 17px;
+    }
+
     .profile-picture {
         margin-left: 20px;
     }
     
     /*Section Break*/
      .section-break h4 {
-        font-size: 35px;
+        font-size: 30px;
     }
     
     /*Project Section*/
     .photo {
-        width: 550px;
-        height: 550px;
+        width: 500px;
+        height: 500px;
     }
     
     summary h3 {
-        font-size: 40px;
+        font-size: 30px;
     }
-    
-    details p {
+    .section-projects p {
         padding: 2em 8em 0;
-        font-size: 20px;
+    }
+    details p {
+        
+        font-size: 17px;
     }
     
     details ul li {
-        font-size: 25px;
+        font-size: 20px;
         padding: 0 5em;
     }
     
     .code-info a {
-        font-size: 30px;
+        font-size: 25px;
         padding-left: 40px;
         margin-right: 30px;
     }
@@ -425,16 +459,15 @@ a:hover {
     }
     
     .header h1 {
-        border: 15px solid #fff;
-        width: 500px;
-        height: 140px;
-        font-size: 70px;
+        width: 450px;
+        height: 110px;
+        font-size: 60px;
     }
     
     /*Navigation Section*/
     
     .navigation a {
-        font-size: 37px;
+        font-size: 25px;
     }
     
     /*About Section*/
@@ -443,52 +476,52 @@ a:hover {
     }
     
     .about-content p {
-        font-size: 25px;
+        font-size: 20px;
     }
     
     .profile-picture {
-        width: 320px;
-        height: 320px
+        width: 300px;
+        height: 300px
     }
     
     /*Project Section*/
     .photo {
-        width: 700px;
-        height: 700px;
+        width: 600px;
+        height: 600px;
     }
     
     summary h3 {
-        font-size: 55px;
+        font-size: 40px;
     }
     
-    details p {
-        font-size: 30px;
-        padding: 1em 10em 0;
+    .section-projects p {
+        font-size: 20px;
+        padding: 1em 12em 0; 
     }
     
     .code-info a {
-        font-size: 35px;
+        font-size: 30px;
     }
     
     details ul li {
-        font-size: 30px;
+        font-size: 25px;
     }
     
     /*Contact Section*/
     
     .contact h3, p {
-        font-size: 35px;
+        font-size: 25px;
     }
     
     .icons {
-        font-size: 70px;
+        font-size: 60px;
        margin-left: 60px; 
     }
     
     /*Section Break*/
     
     .section-break h4 {
-        font-size: 40px;
+        font-size: 35px;
     }
 }
 
