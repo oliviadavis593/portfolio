@@ -165,6 +165,16 @@ a:active {
     
 }
 
+#govInformed {
+    background-color: #91aaa8;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 .section-projects p {
     font-family: 'Lato', sans-serif;
     font-weight: bold;
