@@ -184,6 +184,12 @@ a:active {
     flex-direction: column;
 }
 
+#chicagobrew {
+    background-color: #91aaa8;
+    width: 100%;
+}
+
+
 .section-projects p {
     font-family: 'Lato', sans-serif;
     font-weight: bold;
@@ -349,6 +355,10 @@ a:hover {
     }
     
     /*Project Section*/
+    #gearBoard p {
+        border-width: 300px;  
+    }
+
     summary h3 {
         font-size: 30px;
     }
